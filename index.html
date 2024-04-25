@@ -1,1 +1,51 @@
-"Hello World"
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- scrupt src added inside head or body -->
+    <script src="externScript.js"></script>
+
+    <h2>Yat Fung Loo Web 2.0 Page</h2>
+    <h3>Just a web page to learn Javascript because I ran out of money reading computer arch books.</h3>
+
+    <p id="demo">clock</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo1">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <p id="para">This line is tied to changeColor().</p>
+
+    <button type="button" onclick="changeColor('blue')">change blue</button>
+    <button type="button" onclick="changeColor('red')">change red</button>
+
+    <p id="demo2"></p>
+
+    <script>
+        document.getElementById("demo2").innerHTML = "This is a script block.";
+    </script>
+
+    <!-- javescript output -->
+    <script>
+        document.write(3 + 3);
+    </script>
+
+    <p id="output">Hello</p>
+
+    <button type="button" onclick="document.getElementById('output').innerHTML = 32">
+        button. </button>
+
+    <script>
+        window.alert('alert');
+    </script>
+
+    <P>Print button.</P>
+
+    <button onclick="window.print()">This is windw.print.</button>
+
+</body>
+
+</html>
