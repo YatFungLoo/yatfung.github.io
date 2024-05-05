@@ -12,49 +12,90 @@
     <script src="externScript.js"></script>
 
     <h1>Yat Fung Loo's Website</h1>
-    <h3>Just a web page to learn Javascript because I ran out of money reading computer arch books.</h3>
+    <h3>Programmer based in Hong Kong and United Kingdom</h3>
 
-    <p id="demo">clock</p>
+    <p id="clock">clock</p>
+    <body onload="updateTime(); setInterval('updateTime()', 1000)">
 
-    <button type="button" onmousemove="document.getElementById('demo').innerHTML = Date()">
-        Hover over me to display Date and Time.</button>
 
-    <p id="demo1">A Paragraph.</p>
+    <button class="tablink" onclick="openPage('Home', this, 'orange')" , id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('News', this, 'orange')">News</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+    <button class="tablink" onclick="openPage('Experimental', this, 'orange')">Experimental</button>
 
-    <button type="button" onclick="myFunction()">Try it</button>
+    <div id="Home" class="tabcontent">
+        <p>
+            Welcome to my page! My name is Yat Fung, just someone who likes computer.
+        </p>
 
-    <p id="para">This line is tied to changeColor().</p>
+        <p>I do a lot of very tiny projects and overtime I tend to loose track of everything that I have
+            done and the finer details since University, I wanted to grow this page into a "journal"
+            like place thats my own so I can remember all the projects that I did not finish.
+        </p>
+    </div>
 
-    <button type="button" onclick="changeColor('blue')">change blue</button>
-    <button type="button" onclick="changeColor('red')">change red</button>
+    <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p>
+    </div>
 
-    <p id="demo2"></p>
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+    </div>
+
+    <div id="Experimental" class="tabcontent">
+        <h3>Just testing out Javascript</h3>
+        <p id="demo">clock</p>
+        <button type="button" onmousemove="document.getElementById('demo').innerHTML = Date()">
+            Hover over me to display Date and Time.</button>
+
+        <p id="demo1">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+
+        <p id="para">This line is tied to changeColor().</p>
+        <button type="button" onclick="changeColor('blue')">change blue</button>
+        <button type="button" onclick="changeColor('red')">change red</button>
+
+        <p id="demo2"></p>
+
+        <script>
+            document.getElementById("demo2").innerHTML = "This is a script block.";
+        </script>
+
+        <!-- javescript output -->
+        <script>
+            document.write(3 + 3);
+        </script>
+
+        <p id="output">Hello</p>
+
+        <button type="button" onclick="document.getElementById('output').innerHTML = 32">
+            button. </button>
+
+        <!-- <script>
+            window.alert('alert');
+        </script> -->
+
+        <P>Print button.</P>
+
+        <button onclick="window.print()">This is windw.print.</button>
+
+        <script>
+            let text = "HELLO WORLD";
+            let char = text.charCodeAt(0);
+        </script>
+    </div>
 
     <script>
-        document.getElementById("demo2").innerHTML = "This is a script block.";
-    </script>
-
-    <!-- javescript output -->
-    <script>
-        document.write(3 + 3);
-    </script>
-
-    <p id="output">Hello</p>
-
-    <button type="button" onclick="document.getElementById('output').innerHTML = 32">
-        button. </button>
-
-    <!-- <script>
-        window.alert('alert');
-    </script> -->
-
-    <P>Print button.</P>
-
-    <button onclick="window.print()">This is windw.print.</button>
-
-    <script>
-        let text = "HELLO WORLD";
-        let char = text.charCodeAt(0);
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
     </script>
 
 </body>

@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(228, 219, 181);
+  background-color: rgb(255, 243, 214);
 }
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid rgb(155, 155, 155);
+  /* border: 2px solid rgb(155, 155, 155); */
   color: rgb(73, 73, 73);
   margin-left: 20px;
 }
